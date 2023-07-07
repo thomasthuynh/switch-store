@@ -1,0 +1,24 @@
+nav {
+    height: 8rem;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+
+.logo {
+    width: 50%;
+}
+
+li {
+    font-size: 2rem;
+}
