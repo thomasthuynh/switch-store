@@ -6,6 +6,7 @@ import SwitchLogo from '../assets/SwitchLogo.svg';
 const Nav = () => {
   return (
     <nav>
+      <div className="wrapper">
       <div className="navContainer">
         <a href="/">
           <img src={SwitchLogo} alt="" className="logo" />
@@ -36,6 +37,7 @@ const Nav = () => {
           </li>
 
         </ul>
+      </div>
       </div>
     </nav>
   );
