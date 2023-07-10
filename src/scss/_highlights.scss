@@ -1,0 +1,65 @@
+#highlights {
+    position: relative;
+}
+
+#highlights:before,
+#highlights:after {
+    background: url("../assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 25vh;
+    z-index: 1;
+    background-size: cover;
+}
+
+#highlights:before {
+    transform: translateY(-100%);
+}
+
+#highlights:after {
+    transform: translateY(100%) rotate(180deg);
+}
+
+.highlightsTitle {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.highlightContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+.highlightImg {
+    border: 0.2rem solid #00B0FF;
+    width: 10rem;
+    height: 10rem;
+    font-size: 3.2rem;
+    color: #00B0FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.highlightTitle {
+    font-size: 2rem;
+    margin: 1.6rem 0;
+}
+
+.highlightPara {
+    font-size: 1.6rem;
+    max-width: 28rem;
+    text-align: center;
+}
+
+

@@ -1,5 +1,5 @@
 #landing {
-    background: #91dafc;
+    background: #8fd9fc;
 }
 
 header {
@@ -17,8 +17,9 @@ header {
 }
 
 .headerImageWrapper {
-    width: 25%;
+    max-height: 50vh;
     padding: 4rem;
+    z-index: 2;
 }
 
 h1 {

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './scss/_global.scss'
 import Nav from './components/Nav'
 import Landing from './components/Landing'
+import Highlights from './components/Highlights'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Nav />
       <Landing />
+      <Highlights />
     </div>
   )
 }
