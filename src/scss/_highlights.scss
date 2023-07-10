@@ -15,10 +15,12 @@
 
 #highlights:before {
     transform: translateY(-100%);
+    top: 0;
 }
 
 #highlights:after {
     transform: translateY(100%) rotate(180deg);
+    bottom: 0;
 }
 
 .highlightsTitle {
@@ -30,6 +32,7 @@
 .highlightContainer {
     display: flex;
     justify-content: center;
+    padding-bottom: 8rem;
 }
 
 .highlight {
