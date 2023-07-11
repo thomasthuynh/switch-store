@@ -15,9 +15,12 @@ const Game = ({ game }) => {
       </div>
 
       <div className="gameRating">
-        {new Array(5).fill(0).map((el, index) => {
+        {new Array(Math.floor(game.rating)).fill(0).map((el, index) => {
           return <FontAwesomeIcon icon="star" key={index} />;
         })}
+        {
+          !Number.isInteger(game.rating) && <FontAwesomeIcon icon="star-half-alt" />
+        }
       </div>
 
       <div className="gamePrice">
