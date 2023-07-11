@@ -20,7 +20,7 @@ const Nav = () => {
             </li>
 
             <li className="navList">
-              <a href="/" className="navLink">
+              <a href="/games" className="navLink">
                 Games
               </a>
             </li>

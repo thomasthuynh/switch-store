@@ -22,15 +22,14 @@ header {
     z-index: 2;
 }
 
-h1 {
-    font-size: 5.6rem;
-    color: #00B0FF;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 4rem;
-    margin-bottom: 3.2rem;
+.headerDescription {
+    h1 {
+        margin-bottom: 2rem;
+    }
+    
+    h2 {
+        margin-bottom: 3.2rem;
+    }
 }
 
 .blue {
