@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/_explore.scss"
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   return (
@@ -9,9 +10,9 @@ const Explore = () => {
           <h2 className="exploreTitle">
             Explore More <span className="blue">Games</span>
           </h2>
-          <a href="/">
+          <Link to="/">
             <button className="btn">Explore Games</button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

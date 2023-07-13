@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../scss/_games.scss";
 import Game from "../components/ui/Game";
 import { gameData } from "../assets/data";

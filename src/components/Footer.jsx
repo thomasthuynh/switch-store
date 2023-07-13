@@ -1,23 +1,24 @@
 import React from 'react'
 import "../scss/_footer.scss"
 import Logo from "../assets/SwitchLogo.svg"
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer>
       <div className="footerContainer">
         <div className="wrapper">
-          <a href="/">
+          <Link to="/">
             <figure className="footerLogo">
               <img src={Logo} alt="" className="footerLogoImg" />
             </figure>
-          </a>
+          </Link>
 
           <div className="footerList">
-            <a href="/" className="footerLink">Home</a>
-            <a href="#highlights" className="footerLink">About</a>
-            <a href="/games" className="footerLink">Games</a>
-            <a href="/cart" className="footerLink">Cart</a>
+            <Link to="/" className="footerLink">Home</Link>
+            <Link to="#highlights" className="footerLink">About</Link>
+            <Link to="/games" className="footerLink">Games</Link>
+            <Link to="/cart" className="footerLink">Cart</Link>
           </div>
 
           <div className="footerCopyright">

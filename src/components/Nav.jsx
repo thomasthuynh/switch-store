@@ -2,27 +2,28 @@ import React from "react";
 import "../scss/_nav.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SwitchLogo from "../assets/SwitchLogo.svg";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav>
       <div className="wrapper">
         <div className="navContainer">
-          <a href="/">
+          <Link to="/">
             <img src={SwitchLogo} alt="" className="logo" />
-          </a>
+          </Link>
 
           <ul className="navLinks">
             <li className="navList">
-              <a href="/" className="navLink">
+              <Link to="/" className="navLink">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="navList">
-              <a href="/games" className="navLink">
+              <Link to="/games" className="navLink">
                 Games
-              </a>
+              </Link>
             </li>
 
             {/* <button className="buttonMenu">
@@ -30,9 +31,9 @@ const Nav = () => {
           </button> */}
 
             <li className="navCart">
-              <a href="/cart">
+              <Link to="/cart">
                 <FontAwesomeIcon icon="shopping-cart" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

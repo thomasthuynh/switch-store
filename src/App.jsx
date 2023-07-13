@@ -10,6 +10,7 @@ import Explore from "./components/Explore";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
+import GameInfo from "./pages/GameInfo";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/games/1" element={<GameInfo />}/>
         </Routes>
         <Footer />
 

@@ -1,38 +1,24 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import Rating from "./Rating";
+import Price from "./Price";
 
 const Game = ({ game }) => {
   return (
     <div className="game">
-      <a href="/">
+      <Link to="/games/1">
         <figure className="gameImageContainer">
           <img src={game.url} alt="" />
         </figure>
-      </a>
+      </Link>
 
       <div className="gameTitle">
-        <a href="">{game.title}</a>
+        <Link to="/games/1">{game.title}</Link>
       </div>
 
-      <div className="gameRating">
-        {new Array(Math.floor(game.rating)).fill(0).map((el, index) => {
-          return <FontAwesomeIcon icon="star" key={index} />;
-        })}
-        {
-          !Number.isInteger(game.rating) && <FontAwesomeIcon icon="star-half-alt" />
-        }
-      </div>
-
-      <div className="gamePrice">
-        {game.salePrice ? (
-          <div>
-            <span className="gamePriceNormal">${game.originalPrice}</span>$
-            {game.salePrice}
-          </div>
-        ) : (
-          <div>${game.originalPrice}</div>
-        )}
-      </div>
+      <Rating rating={game.rating}/>
+      <Price salePrice={game.salePrice} originalPrice={game.originalPrice}/>
     </div>
   );
 };
