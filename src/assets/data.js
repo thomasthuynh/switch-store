@@ -1,5 +1,5 @@
 // FAKE DATA
-export const games = [
+export const gameData = [
   {
     id: 1,
     title: "Legend of Zelda: Tears of the Kingdom",

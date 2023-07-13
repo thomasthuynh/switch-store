@@ -2,7 +2,7 @@ import React from "react";
 import "../scss/_featured.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Game from "./ui/Game";
-import { games } from "../assets/data";
+import { gameData } from "../assets/data";
 
 const Featured = () => {
 
@@ -15,7 +15,7 @@ const Featured = () => {
           </h2>
 
           <div className="games">
-            {games
+            {gameData
               .filter((game) => {
                 return game.rating === 5;
               })

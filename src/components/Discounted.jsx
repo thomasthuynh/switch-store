@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/_discounted.scss";
-import { games } from "../assets/data";
+import { gameData } from "../assets/data";
 import Game from "./ui/Game";
 
 const Discounted = () => {
@@ -13,7 +13,7 @@ const Discounted = () => {
           </h2>
 
           <div className="discountedGames">
-            {games
+            {gameData
               .filter((game) => {
                 return game.salePrice > 0;
               })
