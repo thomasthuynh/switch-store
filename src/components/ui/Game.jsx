@@ -7,14 +7,14 @@ import Price from "./Price";
 const Game = ({ game }) => {
   return (
     <div className="game">
-      <Link to="/games/1">
+      <Link to={`/games/${game.id}`}>
         <figure className="gameImageContainer">
           <img src={game.url} alt="" />
         </figure>
       </Link>
 
       <div className="gameTitle">
-        <Link to="/games/1">{game.title}</Link>
+        <Link to={`/games/${game.id}`}>{game.title}</Link>
       </div>
 
       <Rating rating={game.rating} />
