@@ -1,0 +1,99 @@
+.cartTitleContainer {
+  margin: 2rem 0;
+}
+
+.checkoutHeader {
+  background: #00B0FF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2.4rem;
+  margin: 2rem 0;
+}
+
+.checkoutItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkoutGame,
+.checkoutQuantity,
+.checkoutTotal {
+  width: 33%;
+}
+
+.checkoutGame {
+  display: flex;
+}
+
+.checkoutGameImgContainer {
+  width: 10rem;
+}
+
+.checkoutGameInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.checkoutGameTitle {
+  font-size: 1.6rem;
+}
+
+.checkoutGamePrice {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.checkoutGameRemove {
+  background: transparent;
+  border: none;
+  color: red;
+}
+
+.checkoutQuantity {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.checkoutTotal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.6rem;
+  padding-right: 1.2rem;
+}
+
+.totalContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total {
+  width: 20%;
+  display: flex;
+  flex-direction: column; 
+  border-top: 0.2rem solid #00B0FF;
+  padding: 1.6rem 0.8rem;
+}
+
+.itemTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 0.6rem 0;
+}
+
+.priceTotal {
+  font-weight: bold;
+}
+
+.checkoutButton {
+  font-size: 1.6rem;
+  margin: 2.4rem 0;
+}
