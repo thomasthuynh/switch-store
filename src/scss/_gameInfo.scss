@@ -1,0 +1,54 @@
+.gameSelectedTop {
+  width: 25%;
+  padding: 2.4rem 4.8rem;
+}
+
+.gameSelected {
+  display: flex;
+
+  .gamePrice {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.gamesLink {
+  display: flex;
+  align-items: center;
+}
+
+.arrowLeft {
+  font-size: 3rem;
+  padding-right: 1.5rem;
+}
+
+
+.gameSelectedFigure {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameSelectedImg {
+  width: auto;
+}
+
+.gameSelectedDescription {
+  width: 65%;
+  padding: 0 2.4rem;
+}
+
+.gameSelectedTitle {
+  margin-bottom: 1rem;
+}
+
+.gameSummaryTitle {
+  font-size: 2.4rem;
+}
+
+.gameSummaryOverview {
+  font-size: 1.6rem;
+  margin: 1.6rem 0;
+  line-height: 2rem;
+}

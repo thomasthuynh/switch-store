@@ -17,8 +17,8 @@ const Game = ({ game }) => {
         <Link to="/games/1">{game.title}</Link>
       </div>
 
-      <Rating rating={game.rating}/>
-      <Price salePrice={game.salePrice} originalPrice={game.originalPrice}/>
+      <Rating rating={game.rating} />
+      <Price salePrice={game.salePrice} originalPrice={game.originalPrice} />
     </div>
   );
 };
