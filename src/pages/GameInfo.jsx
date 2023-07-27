@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../scss/_gameInfo.scss";
 import { gameData } from "../assets/data";
 import { Link, useParams } from "react-router-dom";
@@ -7,14 +7,20 @@ import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
 import Game from "../components/ui/Game";
 
-const GameInfo = () => {
+const GameInfo = ({ addToCart, cart }) => {
   const { id } = useParams();
 
   const game = gameData.find((title) => {
     return +title.id === +id;
   });
 
-  console.log(game);
+  const addGameToCart = (game) => {
+    addToCart(game);
+  };
+
+  const gameExistsInCart = () => {
+    return cart.find((game) => +game.id === +id);
+  };
 
   return (
     <div className="gamesBody">
@@ -49,7 +55,13 @@ const GameInfo = () => {
                   <p className="gameSummaryOverview">{game.overview}</p>
                 </div>
 
-                <button className="btn">Add to Cart</button>
+                {gameExistsInCart() ? (
+                  <Link to="/cart"><button className="btn">Checkout</button></Link>
+                ) : (
+                  <button className="btn" onClick={() => addGameToCart(game)}>
+                    Add to Cart
+                  </button>
+                )}
               </div>
             </div>
           </div>
