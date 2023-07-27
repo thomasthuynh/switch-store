@@ -1,5 +1,9 @@
+#cart {
+  height: calc(100vh - 13.2rem)
+}
+
 .cartTitleContainer {
-  margin: 2rem 0;
+  margin: 3.2rem 0;
 }
 
 .checkoutHeader {
@@ -96,4 +100,20 @@
 .checkoutButton {
   font-size: 1.6rem;
   margin: 2.4rem 0;
+}
+
+.emptyCheckout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+
+  h2 {
+    padding: 4rem 0;
+  }
+}
+
+.emptyCheckoutImgWrapper {
+  max-width: 40rem;
 }

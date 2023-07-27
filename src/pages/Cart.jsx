@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../scss/_cart.scss"
+import UndrawEmptyCart from "../assets/UndrawEmptyCart.svg"
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
 
@@ -62,28 +64,48 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
             })}
           </div>
 
-          <div className="totalContainer">
-            <div className="total">
-              <div className="itemTotal subTotal">
-                <span>Subtotal</span>
-                <span>${(subTotal().toFixed(2))}</span>
+            {
+              cart.length === 0 && (
+                <div className="emptyCheckout">
+                <figure className="emptyCheckoutImgWrapper">
+                  <img src={UndrawEmptyCart} alt="" />
+                </figure>
+                <h2>You don't have any games in your cart!</h2>
+                <Link to="/games">
+                  <button className="btn">Browse Games</button>
+                </Link>
               </div>
+              )
+            }
 
-              <div className="itemTotal taxTotal">
-                <span>Tax</span>
-                <span>${(subTotal() * 0.1).toFixed(2)}</span>
+
+          {
+            cart.length > 0 && (
+              <div className="totalContainer">
+              <div className="total">
+                <div className="itemTotal subTotal">
+                  <span>Subtotal</span>
+                  <span>${(subTotal().toFixed(2))}</span>
+                </div>
+  
+                <div className="itemTotal taxTotal">
+                  <span>Tax</span>
+                  <span>${(subTotal() * 0.1).toFixed(2)}</span>
+                </div>
+  
+                <div className="itemTotal priceTotal">
+                  <span>Total</span>
+                  <span>${(subTotal() * 1.1).toFixed(2)}</span>
+                </div>
+  
+                <button className="checkoutButton btn">
+                  Proceed to Checkout
+                </button>
               </div>
-
-              <div className="itemTotal priceTotal">
-                <span>Total</span>
-                <span>${(subTotal() * 1.1).toFixed(2)}</span>
-              </div>
-
-              <button className="checkoutButton btn">
-                Proceed to Checkout
-              </button>
             </div>
-          </div>
+            )
+          }
+
         </div>
       </div>
     </div>
