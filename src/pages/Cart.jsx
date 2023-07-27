@@ -1,7 +1,7 @@
 import React from 'react'
 import "../scss/_cart.scss"
 
-const Cart = ({ cart, changeQuantity }) => {
+const Cart = ({ cart, changeQuantity, removeItem }) => {
 
   const subTotal = () => {
     let price = 0;
@@ -41,7 +41,7 @@ const Cart = ({ cart, changeQuantity }) => {
                     <div className="checkoutGameInfo">
                       <span className="checkoutGameTitle">{game.title}</span>
                       <span className="checkoutGamePrice">${game.salePrice || game.originalPrice}</span>
-                      <button className="checkoutGameRemove">Remove</button>
+                      <button onClick={() => removeItem(game)} className="checkoutGameRemove">Remove</button>
                     </div>
                   </div>
 

@@ -33,6 +33,12 @@ function App() {
     }))
   }
 
+  const removeItem = (game) => {
+    setCart(cart.filter((item) => {
+      return item.id !== game.id
+    }))
+  }
+
   useEffect(() => {
     console.log(cart)
   }, [cart])
@@ -74,9 +80,18 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route
             path="/games/:id"
-            element={<GameInfo addToCart={addToCart} cart={cart}/>}
+            element={<GameInfo addToCart={addToCart} cart={cart} />}
           />
-          <Route path="/cart" element={<Cart cart={cart} changeQuantity={changeQuantity}/>} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                changeQuantity={changeQuantity}
+                removeItem={removeItem}
+              />
+            }
+          />
         </Routes>
         <Footer />
       </div>
