@@ -23,6 +23,10 @@ nav {
     color: #00B0FF;
 }
 
+.navCart {
+    position: relative;
+}
+
 .logo {
     width: 50%;
     padding: 2rem;
@@ -30,4 +34,19 @@ nav {
 
 li {
     font-size: 2rem;
+}
+
+.cartLength {
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.4rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.8rem;
+    right: -1rem;
 }

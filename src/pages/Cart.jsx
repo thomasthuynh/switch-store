@@ -50,7 +50,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                   <div className="checkoutQuantity">
                     <input
                       type="number"
-                      min={0}
+                      min={1}
                       max={99}
                       onChange={(e) => changeQuantity(game, e.target.value)}
                       value={game.quantity}

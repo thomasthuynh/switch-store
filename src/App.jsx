@@ -39,42 +39,24 @@ function App() {
     }))
   }
 
+  const numberOfItems = () => {
+    let counter = 0;
+
+    cart.forEach((item) => {
+      counter += item.quantity
+    })
+
+    return counter;
+  }
+
   useEffect(() => {
     console.log(cart)
   }, [cart])
 
-
-  // const addToCart = (game) => {
-  //   const dupedItem = cart.find((item) => {
-  //     return item.id === game.id;
-  //   });
-
-  //   if (dupedItem) {
-  //     setCart(
-  //       cart.map((item) => {
-  //         if (item.id === dupedItem.id) {
-  //           return {
-  //             ...item,
-  //             quantity: item.quantity + 1,
-  //           };
-  //         } else {
-  //           return item;
-  //         }
-  //       })
-  //     );
-  //   } else {
-  //     setCart([...cart, { ...game, quantity: 1 }]);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   console.log(cart);
-  // }, [cart]);
-
   return (
     <Router>
       <div>
-        <Nav />
+        <Nav numberOfItems={numberOfItems()}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />

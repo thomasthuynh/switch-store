@@ -1,6 +1,6 @@
-#cart {
-  height: calc(100vh - 13.2rem)
-}
+// #cart {
+//   height: calc(100vh - 13.2rem);
+// }
 
 .cartTitleContainer {
   margin: 3.2rem 0;
@@ -20,6 +20,7 @@
 .checkoutItem {
   display: flex;
   justify-content: space-between;
+  padding: 1.6rem 0;
 }
 
 .checkoutGame,
@@ -107,7 +108,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
 
   h2 {
     padding: 4rem 0;

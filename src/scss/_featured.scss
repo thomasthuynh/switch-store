@@ -8,39 +8,5 @@
     margin-bottom: 8rem;
 }
 
-.games {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.game {
-    width: 25%;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gameTitle {
-    font-size: 2rem;
-    margin-top: 1.2rem;
-    margin-bottom: 0.8rem;
-    text-align: center;
-}
-
-.gameRating {
-    margin-bottom: 1.2rem;
-    color: #eeee00;
-    font-size: 2rem;
-}
-
-.gamePrice {
-    font-size: 1.6rem;
-}
-
-.gamePriceNormal {
-    color: #6d6a6a;
-    text-decoration: line-through;
-    margin-right: 0.5rem;
-}
 

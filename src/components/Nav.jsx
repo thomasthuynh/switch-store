@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SwitchLogo from "../assets/SwitchLogo.svg";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({ numberOfItems }) => {
   return (
     <nav>
       <div className="wrapper">
@@ -34,6 +34,9 @@ const Nav = () => {
               <Link to="/cart">
                 <FontAwesomeIcon icon="shopping-cart" />
               </Link>
+              {numberOfItems > 0 && (
+                <span className="cartLength">{numberOfItems}</span>
+              )}
             </li>
           </ul>
         </div>
