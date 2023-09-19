@@ -56,7 +56,9 @@ const GameInfo = ({ addToCart, cart }) => {
                 </div>
 
                 {gameExistsInCart() ? (
-                  <Link to="/cart"><button className="btn">Checkout</button></Link>
+                  <Link to="/cart">
+                    <button className="btn">Checkout</button>
+                  </Link>
                 ) : (
                   <button className="btn" onClick={() => addGameToCart(game)}>
                     Add to Cart

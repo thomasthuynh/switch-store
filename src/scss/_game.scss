@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .gameTitle {
@@ -17,12 +18,10 @@
   margin-bottom: 1.2rem;
   color: #eeee00;
   font-size: 2rem;
-  text-align: center;
 }
 
 .gamePrice {
   font-size: 1.6rem;
-  text-align: center;
 }
 
 .gamePriceNormal {

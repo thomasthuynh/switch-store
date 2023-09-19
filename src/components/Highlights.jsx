@@ -9,7 +9,7 @@ const Highlights = () => {
       <div className="highlightsContainer">
         <div className="wrapper">
           <h2 className="highlightsTitle">
-            Why choose <span className="blue">Switch Shop?</span>
+            Why choose <span className="blue">VG Shop?</span>
           </h2>
           <div className="highlightContainer">
 

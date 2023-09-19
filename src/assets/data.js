@@ -2,7 +2,7 @@
 export const gameData = [
   {
     id: 1,
-    title: "Legend of Zelda: Tears of the Kingdom",
+    title: "The Legend of Zelda: Tears of the Kingdom",
     url: "https://images.nintendolife.com/3c28307f2fe0a/legend-of-zelda-tears-of-the-kingdom-cover.cover_300x.jpg",
     originalPrice: 49.99,
     salePrice: 24.99,

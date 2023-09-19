@@ -26,6 +26,10 @@ button {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color:#04a5f0;
+}
+
 img {
     height: 100%;
     width: 100%;
@@ -41,7 +45,7 @@ h2 {
 }
 
 .wrapper {
-    width: 100%;
+    width: 90%;
     max-width: 120rem;
     margin: 0 auto;
 }

@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../scss/_games.scss";
 import Game from "../components/ui/Game";
 import { gameData } from "../assets/data";
 
 const Games = () => {
   const [games, setGames] = useState(gameData);
+
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+  }, []);
 
   const filterGames = (filter) => {
     if (filter === "lowToHigh") {

@@ -1,7 +1,6 @@
 import React from "react";
 import "../scss/_nav.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SwitchLogo from "../assets/SwitchLogo.svg";
 import { Link } from "react-router-dom";
 
 const Nav = ({ numberOfItems }) => {
@@ -10,18 +9,21 @@ const Nav = ({ numberOfItems }) => {
       <div className="wrapper">
         <div className="navContainer">
           <Link to="/">
-            <img src={SwitchLogo} alt="" className="logo" />
+            <div className="logoContainer">
+              <h1 className="logoTitle">VG Shop</h1>
+              {<FontAwesomeIcon icon="vr-cardboard" className="logoIcon"/>}
+            </div>
           </Link>
 
           <ul className="navLinks">
             <li className="navList">
-              <Link to="/" className="navLink">
+              <Link to="/" className="navLink homeLink">
                 Home
               </Link>
             </li>
 
             <li className="navList">
-              <Link to="/games" className="navLink">
+              <Link to="/games" className="navLink gamesLink">
                 Games
               </Link>
             </li>

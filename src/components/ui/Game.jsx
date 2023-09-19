@@ -25,7 +25,7 @@ const Game = ({ game }) => {
         <div>
           <Link to={`/games/${game.id}`}>
             <figure className="gameImageContainer">
-              <img src={game.url} alt="" />
+              <img src={img.src} alt="" />
             </figure>
           </Link>
 

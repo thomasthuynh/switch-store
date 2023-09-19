@@ -18,6 +18,11 @@ nav {
     padding: 2.5rem;
 }
 
+.navLink:hover,
+.navCart:hover {
+    color: #04a5f0;
+}
+
 .navList,
 .navCart {
     color: #00B0FF;
@@ -27,13 +32,36 @@ nav {
     position: relative;
 }
 
-.logo {
-    width: 50%;
-    padding: 2rem;
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logoTitle {
+    font-size: 3.6rem;
+}
+
+.logoIcon {
+    width: 5.6rem;
+    height: 5.6rem;
+    color: #00B0FF;
+    padding: 0 2.4rem;
 }
 
 li {
     font-size: 2rem;
+}
+
+.gamesLink {
+    border: 0.1rem solid #00B0FF;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+
+    &:hover {
+        border: 0.1rem solid #04a5f0;
+    }
 }
 
 .cartLength {
