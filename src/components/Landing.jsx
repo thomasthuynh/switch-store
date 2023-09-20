@@ -19,8 +19,8 @@ const Landing = () => {
             <div className="headerDescription">
               <h1>Level up your savings to play more and spend less!</h1>
               <h2>
-                Find your next game here at{" "}
-                <span className="blue">VG Shop</span>
+                Find your next game here at
+                <span className="blue"> VG Shop</span>
               </h2>
               <Link to="/games" id="features">
                 <button className="btn">Browse games</button>

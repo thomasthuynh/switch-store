@@ -66,3 +66,16 @@
   width: 12rem;
 }
 
+@media (max-width: 820px) {
+  .gameTitle {
+    font-size: 1.6rem;
+  }
+
+  .gamePrice {
+    font-size: 1.45rem;
+  }
+
+  .gameRating {
+    font-size: 1.8rem;
+  }
+}
