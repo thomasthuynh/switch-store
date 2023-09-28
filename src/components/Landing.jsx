@@ -22,7 +22,7 @@ const Landing = () => {
                 Find your next game here at
                 <span className="blue"> VG Shop</span>
               </h2>
-              <Link to="/games" id="features">
+              <Link to="/games">
                 <button className="btn">Browse games</button>
               </Link>
             </div>

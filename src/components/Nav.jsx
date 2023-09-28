@@ -57,7 +57,7 @@ const Nav = ({ numberOfItems }) => {
             </li>
 
             <li className="navList">
-              <Link to="/games" className="navLink gamesLink">
+              <Link to="/games" className="navLink gamesNavLink">
                 Games
               </Link>
             </li>

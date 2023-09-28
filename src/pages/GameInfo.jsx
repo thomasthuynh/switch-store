@@ -71,7 +71,7 @@ const GameInfo = ({ addToCart, cart }) => {
 
         <div className="recommendedGamesContainer">
           <div className="wrapper">
-            <div className="gameSelectedTop">
+            <div className="recommendedGamesTop">
               <h2 className="recommendedGamesTitle">Recommended Games</h2>
             </div>
             <div className="recommendedGames">

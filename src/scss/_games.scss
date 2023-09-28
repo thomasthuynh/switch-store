@@ -22,3 +22,38 @@ select {
   color: #5f5f5f;
   padding: 1.2rem 1.6rem;
 } 
+
+@media (max-width: 600px) {
+  .gamesHeaderTitle {
+    font-size: 3.2rem;
+  }
+
+  .gamesHeader {
+    padding: 4.8rem 1rem 3.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gamesHeaderTitle {
+    font-size: 3rem;
+  }
+
+  select {
+    padding: 1rem 1.4rem;
+    width: 13rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .gamesHeader {
+    flex-direction: column;
+  }
+
+  .gamesHeaderTitle {
+    padding-bottom: 2.4rem;
+  }
+
+  select {
+    padding: 1.2rem 1.6rem;
+  }
+}

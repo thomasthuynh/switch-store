@@ -67,15 +67,41 @@
 }
 
 @media (max-width: 820px) {
+
+  .games {
+    display: flex;
+    justify-content: center;
+  }
+
+  .game {
+    width: 33%;
+  }
+
+  .gameTitle {
+    font-size: 1.8rem;
+  }
+
+  .gamePrice {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .game {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .game {
+    padding: 1.6rem;
+  }
+
   .gameTitle {
     font-size: 1.6rem;
   }
 
-  .gamePrice {
-    font-size: 1.45rem;
-  }
-
   .gameRating {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }

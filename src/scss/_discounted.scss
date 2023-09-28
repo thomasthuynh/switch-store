@@ -12,3 +12,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media (max-width: 820px) {
+  .discountedGames {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .discountedTitle {
+    font-size: 3rem;
+  }
+}
