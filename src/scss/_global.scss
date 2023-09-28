@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: clip;
+}
+
 ul {
     list-style: none;
 }
