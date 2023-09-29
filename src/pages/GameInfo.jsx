@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../scss/_gameInfo.scss";
 import { gameData } from "../assets/data";
 import { Link, useParams } from "react-router-dom";
