@@ -17,7 +17,7 @@ const Landing = () => {
         <header>
           <div className="headerContainer">
             <div className="headerDescription">
-              <h1>Level up your savings to play more and spend less!</h1>
+              <h1>Level up your savings! Play more, spend less!</h1>
               <h2>
                 Find your next game here at
                 <span className="blue"> VG Shop</span>

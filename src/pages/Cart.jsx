@@ -12,6 +12,10 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
     return price;
   };
 
+  const checkoutAlert = () => {
+    alert("Haven't worked on this part yet :(")
+  }
+
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
@@ -59,7 +63,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                   <div className="checkoutQuantity">
                     <input
                       type="number"
-                      min={1}
+                      min={0}
                       max={99}
                       onChange={(e) => changeQuantity(game, e.target.value)}
                       value={game.quantity}
@@ -108,7 +112,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                   <span>${(subTotal() * 1.1).toFixed(2)}</span>
                 </div>
 
-                <button className="checkoutButton btn">
+                <button className="checkoutButton btn" onClick={checkoutAlert}>
                   Proceed to Checkout
                 </button>
               </div>

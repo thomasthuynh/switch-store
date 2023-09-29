@@ -40,8 +40,17 @@ const Game = ({ game }) => {
           />
         </div>
       ) : (
+        // <div className="skeletonContainer">
+        //   <div className="gameImgSkeleton"></div>
+        //   <div className="skeleton gameTitleSkeleton"></div>
+        //   <div className="skeleton gameRatingSkeleton"></div>
+        //   <div className="skeleton gamePriceSkeleton"></div>
+        // </div>
         <div className="skeletonContainer">
-          <div className="gameImgSkeleton"></div>
+          <div className="gameImgSkeleton">
+            <img src="https://images.nintendolife.com/3c28307f2fe0a/legend-of-zelda-tears-of-the-kingdom-cover.cover_300x.jpg" alt="" />
+            <div className="gameBlankSkeleton"></div>
+          </div>
           <div className="skeleton gameTitleSkeleton"></div>
           <div className="skeleton gameRatingSkeleton"></div>
           <div className="skeleton gamePriceSkeleton"></div>
