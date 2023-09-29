@@ -240,6 +240,11 @@
   .checkoutButton {
     font-size: 1.3rem;
   }
+
+  .emptyCheckoutImgWrapper {
+    max-width: 28rem;
+    min-width: 20rem;
+  }
 }
 
 @media (max-width: 580px) {
@@ -264,6 +269,11 @@
     h2 {
       font-size: 3rem;
     }
+  }
+
+  .emptyCheckoutImgWrapper {
+    max-width: 24rem;
+    min-width: 16rem;
   }
 }
 
