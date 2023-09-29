@@ -22,6 +22,13 @@ const GameInfo = ({ addToCart, cart }) => {
     return cart.find((game) => +game.id === +id);
   };
 
+  useEffect(() => {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }, []);
+
   return (
     <div className="gamesBody">
       <main id="gamesMain">
