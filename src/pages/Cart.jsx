@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "../scss/_cart.scss";
 import UndrawEmptyCart from "../assets/UndrawEmptyCart.svg";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Cart = ({ cart, changeQuantity, removeItem }) => {
   const subTotal = () => {
     let price = 0;
@@ -13,18 +16,31 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
   };
 
   const checkoutAlert = () => {
-    alert("Haven't worked on this part yet :(")
-  }
+    alert("Haven't worked on this part yet :(");
+  };
 
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,
-      behavior: "instant"
+      behavior: "instant",
     });
   }, []);
 
   return (
     <div id="cart">
+      <ToastContainer
+        className="toast"
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="wrapper">
         <div className="cartTitleContainer">
           <h2 className="cartTitle">Cart</h2>

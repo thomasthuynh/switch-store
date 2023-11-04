@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../scss/_gameInfo.scss";
 import { gameData } from "../assets/data";
 import { Link, useParams } from "react-router-dom";
@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
 import Game from "../components/ui/Game";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const GameInfo = ({ addToCart, cart }) => {
   const { id } = useParams();
@@ -16,6 +19,16 @@ const GameInfo = ({ addToCart, cart }) => {
 
   const addGameToCart = (game) => {
     addToCart(game);
+    toast.success("Added to cart", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   const gameExistsInCart = () => {
@@ -32,6 +45,19 @@ const GameInfo = ({ addToCart, cart }) => {
   return (
     <div className="gamesBody">
       <main id="gamesMain">
+        <ToastContainer
+          className="toast"
+          position="top-center"
+          autoClose={2500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
         <div className="gamesContainer">
           <div className="wrapper">
             <div className="gameSelectedTop">

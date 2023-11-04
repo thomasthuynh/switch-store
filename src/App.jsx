@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Games from "./pages/Games";
 import GameInfo from "./pages/GameInfo";
 import Cart from "./pages/Cart";
+import { toast } from "react-toastify";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -31,6 +32,17 @@ function App() {
   };
 
   const removeItem = (game) => {
+    toast.error('Removed from cart', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+
     setCart(
       cart.filter((item) => {
         return item.id !== game.id;
